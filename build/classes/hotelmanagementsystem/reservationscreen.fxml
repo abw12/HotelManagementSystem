@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelmanagementsystem.ReservationscreenController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="730.0" prefWidth="1366.0" style="-fx-background-image:url(Images/img/pexels-photo-271643.jpeg)">
+         <children>
+            <Pane layoutX="167.0" layoutY="80.0" opacity="0.7" prefHeight="459.0" prefWidth="448.0" style="-fx-background-color: #fff;">
+               <children>
+                  <Label layoutX="21.0" layoutY="27.0" text="Customer Name:">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="name" alignment="CENTER" focusColor="#7c1d0a" labelFloat="true" layoutX="153.0" layoutY="23.0" prefHeight="25.0" prefWidth="281.0" promptText="Customer Name" unFocusColor="#e84951">
+                     <font>
+                        <Font name="Rockwell Italic" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label layoutX="18.0" layoutY="87.0" text="Phone Number:">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="phone" alignment="CENTER" focusColor="#7c1d0a" labelFloat="true" layoutX="153.0" layoutY="83.0" prefHeight="25.0" prefWidth="281.0" promptText="Phone Number" unFocusColor="#e84951">
+                     <font>
+                        <Font name="Rockwell Italic" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label layoutX="21.0" layoutY="147.0" text="Address:">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="address" alignment="CENTER" focusColor="#7c1d0a" labelFloat="true" layoutX="153.0" layoutY="143.0" prefHeight="25.0" prefWidth="281.0" promptText="Address" unFocusColor="#e84951">
+                     <font>
+                        <Font name="Rockwell Italic" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label layoutX="21.0" layoutY="207.0" text="Email:">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="email" alignment="CENTER" focusColor="#7c1d0a" labelFloat="true" layoutX="153.0" layoutY="203.0" prefHeight="25.0" prefWidth="281.0" promptText="Email Address" unFocusColor="#e84951">
+                     <font>
+                        <Font name="Rockwell Italic" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label layoutX="18.0" layoutY="263.0" text="Duration:">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="duration" alignment="CENTER" focusColor="#7c1d0a" labelFloat="true" layoutX="153.0" layoutY="259.0" prefHeight="25.0" prefWidth="281.0" promptText="Stay Duration" unFocusColor="#e84951">
+                     <font>
+                        <Font name="Rockwell Italic" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label layoutX="18.0" layoutY="323.0" text="Num of People:">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="numPeople" alignment="CENTER" focusColor="#7c1d0a" labelFloat="true" layoutX="153.0" layoutY="319.0" prefHeight="25.0" prefWidth="281.0" promptText="No.of People" unFocusColor="#e84951">
+                     <font>
+                        <Font name="Rockwell Italic" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label layoutX="21.0" layoutY="384.0" text="Payment Type:">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="payment" alignment="CENTER" focusColor="#7c1d0a" labelFloat="true" layoutX="153.0" layoutY="380.0" prefHeight="25.0" prefWidth="281.0" promptText="Payment Type" unFocusColor="#e84951">
+                     <font>
+                        <Font name="Rockwell Italic" size="14.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Pane>
+            <Pane layoutX="706.0" layoutY="80.0" opacity="0.7" prefHeight="459.0" prefWidth="448.0" style="-fx-background-color: #fff;">
+               <children>
+                  <Label layoutX="21.0" layoutY="27.0" text="Room Type">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="roomType" alignment="CENTER" focusColor="#7c1d0a" labelFloat="true" layoutX="139.0" layoutY="22.0" prefHeight="25.0" prefWidth="281.0" promptText="Room Type" unFocusColor="#e84951">
+                     <font>
+                        <Font name="Rockwell Italic" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label layoutX="18.0" layoutY="87.0" text="Room Num:">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="roomNumber" alignment="CENTER" focusColor="#7c1d0a" labelFloat="true" layoutX="139.0" layoutY="82.0" prefHeight="25.0" prefWidth="281.0" promptText="Room Number" unFocusColor="#e84951">
+                     <font>
+                        <Font name="Rockwell Italic" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label layoutX="21.0" layoutY="147.0" text="Start Date:">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="207.0" text="End Date:">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="263.0" text="Price:">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="price" alignment="CENTER" focusColor="#7c1d0a" labelFloat="true" layoutX="139.0" layoutY="258.0" prefHeight="25.0" prefWidth="281.0" promptText="Price" unFocusColor="#e84951">
+                     <font>
+                        <Font name="Rockwell Italic" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label layoutX="18.0" layoutY="323.0" text="Services:">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="services" alignment="CENTER" focusColor="#7c1d0a" labelFloat="true" layoutX="139.0" layoutY="318.0" prefHeight="25.0" prefWidth="281.0" promptText="Services" unFocusColor="#e84951">
+                     <font>
+                        <Font name="Rockwell Italic" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label layoutX="21.0" layoutY="384.0" text="Total:">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="total" alignment="CENTER" focusColor="#7c1d0a" labelFloat="true" layoutX="142.0" layoutY="379.0" prefHeight="25.0" prefWidth="281.0" promptText="Total" unFocusColor="#e84951">
+                     <font>
+                        <Font name="Rockwell Italic" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXDatePicker fx:id="startDate" defaultColor="#09e2a7" layoutX="142.0" layoutY="144.0" prefHeight="25.0" prefWidth="281.0" promptText="Start Date" />
+                  <JFXDatePicker fx:id="endDate" defaultColor="#09e2a7" layoutX="142.0" layoutY="204.0" prefHeight="25.0" prefWidth="281.0" promptText="End Date" />
+               </children>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Pane>
+            <Pane layoutX="170.0" layoutY="560.0" opacity="0.7" prefHeight="149.0" prefWidth="954.0">
+               <children>
+                  <JFXButton buttonType="RAISED" layoutX="150.0" layoutY="40.0" onMouseClicked="#book" prefHeight="55.0" prefWidth="100.0" ripplerFill="#1d1e1e" style="-fx-background-color: #09e2a7;" text="Book">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="14.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="573.0" layoutY="40.0" onMouseClicked="#rest" prefHeight="55.0" prefWidth="100.0" ripplerFill="#1d1e1e" style="-fx-background-color: #09e2a7;" text="Rest.">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="14.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="709.0" layoutY="40.0" onMouseClicked="#print" prefHeight="55.0" prefWidth="100.0" ripplerFill="#1d1e1e" style="-fx-background-color: #09e2a7;" text="Print">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="14.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="427.0" layoutY="40.0" onMouseClicked="#close" prefHeight="55.0" prefWidth="100.0" ripplerFill="#1d1e1e" style="-fx-background-color: #09e2a7;" text="Close">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="14.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="283.0" layoutY="40.0" onMouseClicked="#back" prefHeight="55.0" prefWidth="100.0" ripplerFill="#1d1e1e" style="-fx-background-color: #09e2a7;" text="Back">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="14.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Label layoutX="590.0" layoutY="31.0" opacity="0.91" prefHeight="36.0" prefWidth="156.0" text="Booking Room" textFill="#e8ff36" underline="true">
+               <font>
+                  <Font name="Rockwell Bold Italic" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

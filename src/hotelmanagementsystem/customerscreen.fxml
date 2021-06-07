@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane fx:id="stackpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="730.0" prefWidth="1366.0" style="-fx-background-image:url(Images/img/person-woman-hotel-laptop.jpg)">
+         <children>
+            <JFXTreeTableView fx:id="treeView" layoutX="34.0" layoutY="14.0" opacity="0.7" prefHeight="595.0" prefWidth="1326.0" style="-fx-background-color: #fff;" stylesheets="@hotel.css" AnchorPane.bottomAnchor="115.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+            <Pane layoutX="20.0" layoutY="629.0" opacity="0.7" prefHeight="80.0" prefWidth="1326.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="20.0">
+               <children>
+                  <JFXButton buttonType="RAISED" layoutX="352.0" layoutY="28.0" onMouseClicked="#back" ripplerFill="#685f5f" style="-fx-background-color: #09e2a7;" text="Back" textFill="#510909">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="15.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="451.0" layoutY="28.0" onMouseClicked="#searchByRoomNumber" ripplerFill="#685f5f" style="-fx-background-color: #09e2a7;" text="Search" textFill="#510909">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="15.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </JFXButton>
+                  <JFXTextField fx:id="searchText" focusColor="#570808" labelFloat="true" layoutX="580.0" layoutY="28.0" prefHeight="28.0" prefWidth="279.0" promptText="Search By Room Number" unFocusColor="#3072c3">
+                     <font>
+                        <Font name="Rockwell Italic" size="15.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

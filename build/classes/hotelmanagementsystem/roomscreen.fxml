@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelmanagementsystem.RoomscreenController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="730.0" prefWidth="1366.0" style="-fx-background-image:url(Images/img/person-woman-hotel-laptop.jpg)">
+         <children>
+            <JFXTreeTableView fx:id="treeView" layoutX="248.0" layoutY="58.0" opacity="0.7" prefHeight="700.0" prefWidth="900.0" stylesheets="@hotel.css" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />
+            <Pane layoutX="26.0" layoutY="15.0" opacity="0.8" prefHeight="700.0" prefWidth="400.0" style="-fx-background-color: #fff; -fx-background-radius: 6px;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="930.0" AnchorPane.topAnchor="15.0">
+               <children>
+                  <Pane layoutX="22.0" layoutY="62.0" prefHeight="133.0" prefWidth="378.0" style="-fx-border-radius: 15; -fx-border-color: #ccc; -fx-border-width: 2;">
+                     <children>
+                        <JFXTextField fx:id="search_text" alignment="CENTER" focusColor="#1447e1" layoutX="21.0" layoutY="24.0" prefHeight="25.0" prefWidth="336.0" promptText="Search by Room Number" unFocusColor="#bf4848">
+                           <font>
+                              <Font name="Rockwell Italic" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXButton buttonType="RAISED" layoutX="87.0" layoutY="76.0" onMouseClicked="#searchByRoomNumber" prefHeight="37.0" prefWidth="76.0" ripplerFill="#0d215e" style="-fx-background-color: #09e2a7;" text="Search">
+                           <font>
+                              <Font name="Rockwell Italic" size="14.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="224.0" layoutY="76.0" onMouseClicked="#makeItAvailable" prefHeight="37.0" prefWidth="85.0" ripplerFill="#0d215e" style="-fx-background-color: #09e2a7;" text="Available">
+                           <font>
+                              <Font name="Rockwell Italic" size="14.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="22.0" layoutY="305.0" prefHeight="133.0" prefWidth="378.0" style="-fx-border-radius: 15; -fx-border-color: #ccc; -fx-border-width: 2;">
+                     <children>
+                        <JFXCheckBox fx:id="busy" checkedColor="#09e2a7" layoutX="61.0" layoutY="26.0" onAction="#searchBusy" text="Busy" unCheckedColor="#a10606">
+                           <font>
+                              <Font name="Rockwell Italic" size="14.0" />
+                           </font>
+                        </JFXCheckBox>
+                        <JFXCheckBox fx:id="available" checkedColor="#09e2a7" layoutX="249.0" layoutY="26.0" onAction="#searchAvailable" text="Available" unCheckedColor="#a10606">
+                           <font>
+                              <Font name="Rockwell Italic" size="14.0" />
+                           </font>
+                        </JFXCheckBox>
+                        <JFXButton buttonType="RAISED" layoutX="151.0" layoutY="67.0" onMouseClicked="#searchByStatus" prefHeight="37.0" prefWidth="76.0" ripplerFill="#0d215e" style="-fx-background-color: #09e2a7;" text="Search">
+                           <font>
+                              <Font name="Rockwell Italic" size="14.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="22.0" layoutY="512.0" prefHeight="133.0" prefWidth="378.0" style="-fx-border-radius: 15; -fx-border-color: #ccc; -fx-border-width: 2;">
+                     <children>
+                        <JFXButton buttonType="RAISED" layoutX="243.0" layoutY="49.0" onMouseClicked="#close" prefHeight="37.0" prefWidth="76.0" ripplerFill="#0d215e" style="-fx-background-color: #09e2a7;" text="Close">
+                           <font>
+                              <Font name="Rockwell Italic" size="14.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="99.0" layoutY="50.0" onMouseClicked="#goBack" prefHeight="37.0" prefWidth="76.0" ripplerFill="#0d215e" style="-fx-background-color: #09e2a7;" text="Back">
+                           <font>
+                              <Font name="Rockwell Italic" size="14.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+                  <Label contentDisplay="CENTER" graphicTextGap="3.0" layoutX="64.0" layoutY="7.0" prefHeight="45.0" prefWidth="293.0" text="You can Search Rooms by room number &#10;&#9;&#9;    &amp; make it Available.">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" graphicTextGap="3.0" layoutX="27.0" layoutY="225.0" prefHeight="57.0" prefWidth="378.0" text="You can Search Busy &amp; Available Rooms by Clicking on &#10;                           Busy &amp; Available Checkboxes.">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="3.0" layoutX="22.0" layoutY="455.0" prefHeight="57.0" prefWidth="378.0" text="You can go Back or Close App.&#10;">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

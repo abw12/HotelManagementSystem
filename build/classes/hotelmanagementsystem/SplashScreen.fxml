@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="434.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelmanagementsystem.SplashScreenController">
+   <children>
+      <ImageView fx:id="Image" fitHeight="500.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/img/pexels-photo-295824.jpeg" />
+         </image>
+      </ImageView>
+      <ProgressIndicator layoutX="327.0" layoutY="215.0" prefHeight="67.0" prefWidth="81.0" />
+   </children>
+</AnchorPane>
